@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Perfil GitHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>GitHub Finder</h1>
+    <div class="search-box">
+      <input type="text" id="username" placeholder="Digite o usuário...">
+      <button onclick="executarBusca()">Buscar</button>
+    </div>
+
+    <div id="perfil-card" class="card hidden">
+      <img id="avatar" src="" alt="Avatar">
+      <h2 id="nome"></h2>
+      <p id="bio"></p>
+      <div class="stats">
+        <span><strong>Seguidores:</strong> <span id="seguidores"></span></span>
+        <span><strong>Repositórios:</strong> <span id="repos"></span></span>
+      </div>
+    </div>
+    
+    <p id="erro" class="error-msg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
